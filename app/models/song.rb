@@ -14,13 +14,19 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents
+  
     self.notes.map {|note| note.content ? note.content : nil}
   end
 
   def note_contents=(note_content_array)
-    notes_collection.each do |note| 
-      self.notes << Note.find_or_create_by(content: note)
+    
+    note_content_array.each do |note| 
+      if !note.empty? 
+        self.notes << Note.find_or_create_by(content: note)
+      end
     end   
+
+
   end
  
 
