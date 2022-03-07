@@ -160,3 +160,34 @@ genres = Hash[[
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
 
+#seeding artists database 
+a =   Artist.create(name: Faker::Music.band)
+b =   Artist.create(name: Faker::Music.band)
+c =   Artist.create(name: Faker::Music.band)
+d =   Artist.create(name: Faker::Music.band)
+e =   Artist.create(name: Faker::Music.band)
+f =   Artist.create(name: Faker::Music.band)
+g =   Artist.create(name: Faker::Music.band)
+
+
+song1 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song2 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song3 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song4 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song5 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song6 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song7 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song8 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song9 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song10 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song11 = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+song12  = Song.create(title: Faker::Music.album, artist_id: rand(1..7), genre_id: rand(1..30))
+
+
+
+
+
+
+
+
+
